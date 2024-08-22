@@ -1,7 +1,7 @@
 
 const App = () => {
   return (
-    <div>
+    <div className="h-screen overflow-x-hidden bg-background text-foreground">
     </div>
   );
 };
