@@ -5,7 +5,7 @@ import { themeContext } from "./ThemeProvider"
 const ThemeToggler = () => {
     const {theme, setTheme } = useContext(themeContext)
     return (
-        <div className="flex h-10 m-40 overflow-hidden rounded-full w-fit bg-slate-100 text-slate-900">
+        <div className="flex h-10 overflow-hidden rounded-full w-fit bg-slate-100 text-slate-900">
             <div onClick={() => setTheme('dark')} className={cn("flex px-3 py-1 w-fit items-center justify-center  h-full", {'text-primaryForeground bg-primary': theme === 'dark'})}>
                 <MoonIcon className="size-5 text-inherit" />
             </div>
